@@ -1,9 +1,10 @@
 package stream_api.list;
 
 
-import collections.list.OperacoesBasicas.CarrinhoDeCompras;
-import collections.list.pesquisa.SomaNumeros;
-import collections.list.ordenacao.OrdenacaoNumeros;
+import collections.list.OperacoesBasicas.Compras.CarrinhoDeCompras;
+import collections.list.ordenacao.numeros.OrdenacaoNumeros;
+import collections.list.pesquisa.numeros.SomaNumeros;
+
 import javax.swing.JOptionPane;
 
 public class List {

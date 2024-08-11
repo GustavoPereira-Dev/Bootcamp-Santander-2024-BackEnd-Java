@@ -1,4 +1,4 @@
-package collections.list.pesquisa;
+package collections.list.pesquisa.numeros;
 
 public class Numero {
 	private int numero;

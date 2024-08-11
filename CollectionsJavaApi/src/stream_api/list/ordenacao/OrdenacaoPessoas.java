@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class OrdenacaoPessoas {
-    // atributo
+
     private List<Pessoa> pessoaList;
 
     public OrdenacaoPessoas() {

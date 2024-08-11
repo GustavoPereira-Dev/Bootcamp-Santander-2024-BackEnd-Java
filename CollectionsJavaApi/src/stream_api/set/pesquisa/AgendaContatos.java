@@ -2,56 +2,51 @@ package stream_api.set.pesquisa;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class AgendaContatos {
 
-  private Set<Contato> contatosSet;
+    private Set<Contato> contatosSet;
 
-  public AgendaContatos() {
-    this.contatosSet = new HashSet<>();
-  }
-
-  public void adicionarContato(String nome, int numero) {
-    contatosSet.add(new Contato(nome, numero));
-  }
-
-  public void exibirContatos() {
-    if (!contatosSet.isEmpty()) {
-      System.out.println(contatosSet);
-    } else {
-      System.out.println("O conjunto está vazio!");
+    public AgendaContatos() {
+        this.contatosSet = new HashSet<>();
     }
-  }
 
-  public Set<Contato> pesquisarPorNome(String nome) {
-    Set<Contato> contatosPorNome = new HashSet<>();
-    if (!contatosSet.isEmpty()) {
-      for (Contato c : contatosSet) {
-        if (c.getNome().startsWith(nome)) {
-          contatosPorNome.add(c);
+    public void adicionarContato(String nome, int numero) {
+        contatosSet.add(new Contato(nome, numero));
+    }
+
+    public void exibirContatos() {
+        if (!contatosSet.isEmpty()) {
+            contatosSet.forEach(System.out::println);
+        } else {
+            System.out.println("O conjunto está vazio!");
         }
-      }
-      return contatosPorNome;
-    } else {
-      throw new RuntimeException("O conjunto está vazio!");
     }
-  }
 
-  public Contato atualizarNumeroContato(String nome, int novoNumero) {
-    Contato contatoAtualizado = null;
-    if (!contatosSet.isEmpty()) {
-      for (Contato c : contatosSet) {
-        if (c.getNome().equalsIgnoreCase(nome)) {
-          c.setNumero(novoNumero);
-          contatoAtualizado = c;
-          break;
+    public Set<Contato> pesquisarPorNome(String nome) {
+        if (!contatosSet.isEmpty()) {
+            return contatosSet.stream()
+                    .filter(c -> c.getNome().startsWith(nome))
+                    .collect(Collectors.toSet());
+        } else {
+            throw new RuntimeException("O conjunto está vazio!");
         }
-      }
-      return contatoAtualizado;
-    } else {
-      throw new RuntimeException("O conjunto está vazio!");
     }
-  }
+
+    public Contato atualizarNumeroContato(String nome, int novoNumero) {
+        if (!contatosSet.isEmpty()) {
+            return contatosSet.stream()
+                    .filter(c -> c.getNome().equalsIgnoreCase(nome))
+                    .peek(c -> c.setNumero(novoNumero))
+                    .findFirst()
+                    .orElse(null);
+        } else {
+            throw new RuntimeException("O conjunto está vazio!");
+        }
+    }
+
+
 
   public static void main(String[] args) {
 
