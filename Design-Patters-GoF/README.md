@@ -1,0 +1,5 @@
+# Desafio Design Patterns GoF
+
+- Foi o desenvolvimento de um pequeno projeto utilizando o paradigma de Design Patterns (Padrões de Projeto) em Orientação de Objeto, que demonstra como ele pode ser utilizado (e é aliás utilizado em vários Frameworks ou bibliotecas de linguagem como é o caso do Spring) para deixar o código bem mais legível, otimizado e manter a POO nas boas práticas
+- Foi especificado um item de cada um padrão (criacional, comportamental e estrutural), o Singleton, Stategy e Facade que magistralmente o próprio Framework de Java utiliza para criar uma API que interage com o ViaCEP para criar usuários e acrescentar dados do endereço de acordo com o CEP que é acrescentado, os fundamentos dos padrões de projeto e com o pequeno Banco (H2) utilizado
+  - no "lab-padroes-projeto-java" está uma versão bem mais simples compreensão com exemplo da utilização dos 3 padrões, enquanto o "lab-padroes-projeto-spring" está uma visualização bem mais prática da utilização deles em um projeto real pelo Spring 
