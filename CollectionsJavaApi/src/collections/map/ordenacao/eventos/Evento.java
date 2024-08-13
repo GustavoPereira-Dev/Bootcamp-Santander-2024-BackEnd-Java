@@ -1,4 +1,4 @@
-package collections.map.ordenacao;
+package collections.map.ordenacao.eventos;
 
 public class Evento {
 

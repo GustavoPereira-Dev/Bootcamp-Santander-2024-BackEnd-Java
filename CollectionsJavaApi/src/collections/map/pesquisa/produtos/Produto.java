@@ -1,4 +1,4 @@
-package collections.map.pesquisa;
+package collections.map.pesquisa.produtos;
 
 public class Produto {
 

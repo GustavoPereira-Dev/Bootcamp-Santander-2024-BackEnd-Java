@@ -28,6 +28,8 @@ public class Operacoes {
 				case 2:
 					Tarefas();
 					break;
+				default:
+					System.out.println("Saindo de Operações");
 			}
 		} while(opc >= 1 && opc <= 2);
 	}
@@ -59,7 +61,7 @@ public class Operacoes {
 					compras.exibirItens();
 					break;
 				default: 
-					System.out.println("Saindo de Operações básicas");
+					System.out.println("Saindo de Compras");
 					
 			}
 		} while(opc >= 1 && opc <= 4);
@@ -73,7 +75,7 @@ public class Operacoes {
 		
 		do {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - adicionar item "
-					+ "\n 2 - remover item \n 3 - calcular valor total \n 4 - Mostra carrinho Outro - Sair"));
+					+ "\n 2 - remover item \n 3 - calcular valor total \n 4 - Mostra carrinho Outro \n 5 - Mostrar Carinho - Sair"));
 	
 			switch(opc){
 				case 1:
@@ -91,7 +93,13 @@ public class Operacoes {
 				case 4: 
 					System.out.println("Total: " + tarefas.obterNumeroTotalTarefas());
 					break;
+				case 5:
+					System.out.println(tarefas);
+					break;
+				default: 
+					System.out.println("Saindo de Tarefas");
+					
 		    }
-		} while(opc >= 1 && opc <= 4);
+		} while(opc >= 1 && opc <= 5);
 	}
 }

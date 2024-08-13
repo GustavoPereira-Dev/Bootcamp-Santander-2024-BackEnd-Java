@@ -1,4 +1,4 @@
-package collections.map.pesquisa;
+package collections.map.pesquisa.palavras;
 
 import java.util.HashMap;
 import java.util.Map;

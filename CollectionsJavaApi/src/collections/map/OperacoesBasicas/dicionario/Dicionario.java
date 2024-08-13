@@ -1,4 +1,4 @@
-package collections.map.OperacoesBasicas;
+package collections.map.OperacoesBasicas.dicionario;
 
 import java.util.HashMap;
 import java.util.Map;

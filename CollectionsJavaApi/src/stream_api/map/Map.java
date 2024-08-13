@@ -3,10 +3,10 @@ package stream_api.map;
 
 import javax.swing.JOptionPane;
 
-import collections.map.OperacoesBasicas.Dicionario;
-import collections.map.ordenacao.LivrariaOnline;
-import collections.map.ordenacao.Livro;
-import collections.map.pesquisa.ContagemPalavras;
+import collections.map.OperacoesBasicas.dicionario.Dicionario;
+import collections.map.ordenacao.livros.LivrariaOnline;
+import collections.map.ordenacao.livros.Livro;
+import collections.map.pesquisa.palavras.ContagemPalavras;
 
 public class Map {
 	private static class InstanceHolder {

@@ -17,7 +17,7 @@ public class List {
 	}
 	
 	
-	public static void chamarMenu() {
+	public void chamarMenu() {
 		
 		
 		int opc;
@@ -34,14 +34,13 @@ public class List {
 						break;
 					default:
 						System.out.println("Saindo da lista");
-						System.exit(1);
 				}
 			} catch(NumberFormatException n) {
 				System.out.println("Formato de número incorreto");
 			} catch(RuntimeException e) {
 				System.out.println("Erro: " + e.getMessage());
 			} 
-		} while(true);
+		} while(opc >= 1 && opc <= 3);
 	}
 	
 	

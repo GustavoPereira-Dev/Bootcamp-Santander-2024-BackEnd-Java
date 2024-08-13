@@ -1,4 +1,4 @@
-package collections.set.ordenacao;
+package collections.set.ordenacao.alunos;
 
 import java.util.Comparator;
 import java.util.Objects;

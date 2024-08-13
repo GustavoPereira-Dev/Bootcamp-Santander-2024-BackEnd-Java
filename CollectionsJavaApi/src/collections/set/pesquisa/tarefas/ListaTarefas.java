@@ -1,4 +1,4 @@
-package collections.set.pesquisa;
+package collections.set.pesquisa.tarefas;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,9 +1,9 @@
 package stream_api.set;
 
 
-import collections.set.OperacoesBasicas.ConjuntoPalavrasUnicas;
-import collections.set.ordenacao.GerenciadorAlunos;
-import collections.set.pesquisa.ListaTarefas;
+import collections.set.OperacoesBasicas.palavras.ConjuntoPalavrasUnicas;
+import collections.set.ordenacao.alunos.GerenciadorAlunos;
+import collections.set.pesquisa.tarefas.ListaTarefas;
 
 import javax.swing.JOptionPane;
 

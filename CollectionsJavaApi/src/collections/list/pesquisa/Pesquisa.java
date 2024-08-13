@@ -31,6 +31,8 @@ public class Pesquisa {
 				case 2:
 					Numeros();
 					break;
+				default:
+					System.out.println("Saindo de Pesquisa");
 			}
 		} while(opc >= 1 && opc <= 2);
 	}
@@ -61,7 +63,7 @@ public class Pesquisa {
 					numeros.exibirNumeros();
 					break;
 				default: 
-					System.out.println("Saindo de Pesquisa");
+					System.out.println("Saindo de Números");
 					
 			}
 		} while(opc >= 1 && opc <= 5);
@@ -71,8 +73,8 @@ public class Pesquisa {
 		int opc, anoPublicacao, anoInicial, anoFinal;
 		String titulo, autor;
 		do {
-			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - Adicionar Número \n 2 - Calcular Soma \n "
-					+ "3 - Encontrar o maior nº \n 4 - Encontrar o menor nº \n 5 - Exibir Números \n Outro - Sair"));
+			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - Adicionar Livros \n 2 - Pesquisar por Autor \n "
+					+ "3 - Pesquisar por intervalo de anos \n 4 - Pesquisar por Título \n 5 - Exibir Livros \n Outro - Sair"));
 			switch(opc) {
 				case 1:
 					titulo = JOptionPane.showInputDialog("Digite o título do livro");
@@ -82,7 +84,7 @@ public class Pesquisa {
 					break;
 				case 2:
 					autor = JOptionPane.showInputDialog("Digite o autor do livro");
-					System.out.println(livros.pesquisarPorTitulo(autor));
+					System.out.println(livros.pesquisarPorAutor(autor));
 					break;
 				case 3: 
 					anoInicial = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano inicial do intervalo"));
@@ -93,7 +95,12 @@ public class Pesquisa {
 					titulo = JOptionPane.showInputDialog("Digite o titulo do livro");
 					livros.pesquisarPorTitulo(titulo);
 					break;
+				case 5:
+					System.out.println(livros);
+					break;
+				default:
+					System.out.println("Saindo de Livros");
 		    }
-		} while(opc >= 1 && opc <= 4);
+		} while(opc >= 1 && opc <= 5);
 	}
 }

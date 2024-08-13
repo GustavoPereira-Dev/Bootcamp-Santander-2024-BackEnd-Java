@@ -29,6 +29,8 @@ public class Ordenacao {
 				case 2:
 					Pessoas();
 					break;
+				default:
+					System.out.println("Saindo de Ordenações");
 			}
 		} while(opc >= 1 && opc <= 2);
 	}
@@ -39,7 +41,7 @@ public class Ordenacao {
 		
 		do {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - Adicionar Número "
-					+ "\n 2 - Ordem Ascendente \n 3 - Ordem Descedente \n Outro - Sair"));
+					+ "\n 2 - Ordem Ascendente \n 3 - Ordem Descedente \n 4 - Mostrar Números \n Outro - Sair"));
 	
 			switch(opc) {
 				case 1: 
@@ -52,11 +54,13 @@ public class Ordenacao {
 				case 3:
 					System.out.println("A ordem descedente é: " + numeros.ordenarDescendente());
 					break;
+				case 4:
+					System.out.println(numeros);
 				default: 
-					System.out.println("Saindo de Ordenação");
+					System.out.println("Saindo de Números");
 					
 			}
-		} while(opc >= 1 && opc <= 3);
+		} while(opc >= 1 && opc <= 4);
 	}
 	
 	private static void Pessoas() {
@@ -66,8 +70,8 @@ public class Ordenacao {
 		double altura;
 		
 		do {
-			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - Adicionar Número "
-					+ "\n 2 - Ordem Ascendente \n 3 - Ordem Descedente \n Outro - Sair"));
+			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n 1 - Adicionar Pessoa "
+					+ "\n 2 - Ordenar por Idade \n 3 - Ordernar por altura \n 4 - Mostrar Pessoas \n Outro - Sair"));
 			switch(opc){
 			case 1:
 				nome = JOptionPane.showInputDialog("Digite o nome da pessoa");
@@ -82,7 +86,11 @@ public class Ordenacao {
 			case 3: 
 				System.out.println(pessoas.ordenarPorAltura());
 				break;
+			case 4:
+				System.out.println(pessoas);
+			default:
+				System.out.println("Saindo de Pessoas");
 		    }
-		} while(opc >= 1 && opc <= 3);
+		} while(opc >= 1 && opc <= 4);
 	}
 }

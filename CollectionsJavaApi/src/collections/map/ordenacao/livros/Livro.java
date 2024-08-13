@@ -1,4 +1,4 @@
-package collections.map.ordenacao;
+package collections.map.ordenacao.livros;
 
 import java.util.Comparator;
 import java.util.Map;

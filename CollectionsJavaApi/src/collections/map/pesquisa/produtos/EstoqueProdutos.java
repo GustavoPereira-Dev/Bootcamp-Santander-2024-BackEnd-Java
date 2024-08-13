@@ -1,4 +1,4 @@
-package collections.map.pesquisa;
+package collections.map.pesquisa.produtos;
 
 import java.util.HashMap;
 import java.util.Map;
