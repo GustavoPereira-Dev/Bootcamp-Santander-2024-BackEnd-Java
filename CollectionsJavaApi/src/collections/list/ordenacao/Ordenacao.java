@@ -7,14 +7,6 @@ import collections.list.ordenacao.pessoas.OrdenacaoPessoas;
 
 public class Ordenacao {
 	
-	private static class InstanceHolder {
-		public static Ordenacao instancia = new Ordenacao();
-	}
-	
-	public static Ordenacao getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
 	static OrdenacaoNumeros numeros = new OrdenacaoNumeros();
 	static OrdenacaoPessoas pessoas = new OrdenacaoPessoas();
 	

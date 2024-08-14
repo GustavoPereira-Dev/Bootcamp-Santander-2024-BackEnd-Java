@@ -2,17 +2,10 @@ package collections.list.OperacoesBasicas;
 
 import javax.swing.JOptionPane;
 
-import collections.list.OperacoesBasicas.Compras.CarrinhoDeCompras;
-import collections.list.OperacoesBasicas.Tarefas.ListaTarefa;
+import collections.list.OperacoesBasicas.compras.CarrinhoDeCompras;
+import collections.list.OperacoesBasicas.tarefas.ListaTarefa;
 
 public class Operacoes {
-	private static class InstanceHolder {
-		public static Operacoes instancia = new Operacoes();
-	}
-	
-	public static Operacoes getInstancia() {
-		return InstanceHolder.instancia;
-	}
 	
 	static CarrinhoDeCompras compras = new CarrinhoDeCompras();
 	static ListaTarefa tarefas = new ListaTarefa();

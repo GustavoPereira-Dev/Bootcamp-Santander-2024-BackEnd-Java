@@ -6,13 +6,6 @@ import collections.map.OperacoesBasicas.contatos.AgendaContatos;
 import collections.set.pesquisa.tarefas.ListaTarefas;
 
 public class Pesquisa {
-	private static class InstanceHolder {
-		public static Pesquisa instancia = new Pesquisa();
-	}
-	
-	public static Pesquisa getInstancia() {
-		return InstanceHolder.instancia;
-	}
 	
 	static ListaTarefas tarefas = new ListaTarefas();
 	static AgendaContatos contatos = new AgendaContatos();

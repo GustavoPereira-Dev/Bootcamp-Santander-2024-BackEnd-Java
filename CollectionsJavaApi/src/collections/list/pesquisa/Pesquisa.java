@@ -9,14 +9,6 @@ import collections.list.pesquisa.numeros.SomaNumeros;
 
 public class Pesquisa {
 	
-	private static class InstanceHolder {
-		public static Pesquisa instancia = new Pesquisa();
-	}
-	
-	public static Pesquisa getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
 	static CatalogoLivros livros = new CatalogoLivros();
 	static SomaNumeros numeros = new SomaNumeros(); 
 	

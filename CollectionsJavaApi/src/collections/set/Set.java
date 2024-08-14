@@ -4,22 +4,13 @@ package collections.set;
 import collections.list.OperacoesBasicas.Operacoes;
 import collections.list.ordenacao.Ordenacao;
 import collections.list.pesquisa.Pesquisa;
-import collections.set.OperacoesBasicas.palavras.ConjuntoPalavrasUnicas;
-import collections.set.ordenacao.alunos.GerenciadorAlunos;
-import collections.set.pesquisa.tarefas.ListaTarefas;
+
 
 import javax.swing.JOptionPane;
 
 public class Set {
-	private static class InstanceHolder {
-		public static Set instancia = new Set();
-	}
 	
-	public static Set getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
-	public void chamarMenu() {
+	public static void chamarMenu() {
 		int opc;
 		do {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n"

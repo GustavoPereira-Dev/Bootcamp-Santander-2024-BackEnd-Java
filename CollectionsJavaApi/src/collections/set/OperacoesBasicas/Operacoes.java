@@ -7,13 +7,6 @@ import collections.set.OperacoesBasicas.palavras.ConjuntoPalavrasUnicas;
 
 
 public class Operacoes {
-	private static class InstanceHolder {
-		public static Operacoes instancia = new Operacoes();
-	}
-	
-	public static Operacoes getInstancia() {
-		return InstanceHolder.instancia;
-	}
 	
 	static ConjuntoPalavrasUnicas palavrasUnicas = new ConjuntoPalavrasUnicas();
 	static ConjuntoConvidados convidados = new ConjuntoConvidados();

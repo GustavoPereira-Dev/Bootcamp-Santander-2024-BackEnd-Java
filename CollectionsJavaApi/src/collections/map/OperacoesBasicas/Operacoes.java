@@ -6,13 +6,6 @@ import collections.map.OperacoesBasicas.contatos.AgendaContatos;
 import collections.map.OperacoesBasicas.dicionario.Dicionario;
 
 public class Operacoes {
-	private static class InstanceHolder {
-		public static Operacoes instancia = new Operacoes();
-	}
-	
-	public static Operacoes getInstancia() {
-		return InstanceHolder.instancia;
-	}
 	
 	static Dicionario dicionario = new Dicionario();
 	static AgendaContatos contatos = new AgendaContatos();

@@ -1,27 +1,14 @@
 package collections.map;
 
-
 import javax.swing.JOptionPane;
 
-import collections.list.List;
 import collections.list.OperacoesBasicas.Operacoes;
 import collections.list.ordenacao.Ordenacao;
 import collections.list.pesquisa.Pesquisa;
-import collections.map.OperacoesBasicas.dicionario.Dicionario;
-import collections.map.ordenacao.livros.LivrariaOnline;
-import collections.map.ordenacao.livros.Livro;
-import collections.map.pesquisa.palavras.ContagemPalavras;
 
 public class Map {
-	private static class InstanceHolder {
-		public static Map instancia = new Map();
-	}
 	
-	public static Map getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
-	public void chamarMenu() {
+	public static void chamarMenu() {
 		int opc;
 		do {
 			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção \n"

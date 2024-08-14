@@ -7,17 +7,9 @@ import collections.map.ordenacao.livros.LivrariaOnline;
 import collections.map.ordenacao.livros.Livro;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
 public class Ordenacao {
-	private static class InstanceHolder {
-		public static Ordenacao instancia = new Ordenacao();
-	}
-	
-	public static Ordenacao getInstancia() {
-		return InstanceHolder.instancia;
-	}
 	
 	static LivrariaOnline livraria = new LivrariaOnline();
 	static  AgendaEventos agenda = new AgendaEventos();

@@ -17,7 +17,7 @@ public class List {
 	}
 	
 	
-	public void chamarMenu() {
+	public static void chamarMenu() {
 		
 		
 		int opc;

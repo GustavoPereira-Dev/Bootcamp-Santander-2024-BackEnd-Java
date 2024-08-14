@@ -7,14 +7,6 @@ import collections.map.pesquisa.produtos.EstoqueProdutos;
 
 public class Pesquisa {
 	
-	private static class InstanceHolder {
-		public static Pesquisa instancia = new Pesquisa();
-	}
-	
-	public static Pesquisa getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
 	static ContagemPalavras palavras = new ContagemPalavras();
 	static EstoqueProdutos produtos = new EstoqueProdutos();
 	

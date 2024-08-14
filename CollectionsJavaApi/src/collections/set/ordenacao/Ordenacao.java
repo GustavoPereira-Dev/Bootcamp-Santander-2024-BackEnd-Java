@@ -9,14 +9,6 @@ import collections.set.ordenacao.produtos.CadastroProdutos;
 
 public class Ordenacao {
 	
-	private static class InstanceHolder {
-		public static Ordenacao instancia = new Ordenacao();
-	}
-	
-	public static Ordenacao getInstancia() {
-		return InstanceHolder.instancia;
-	}
-	
 	static GerenciadorAlunos alunos = new GerenciadorAlunos();
 	static CadastroProdutos produtos = new CadastroProdutos();
 	
